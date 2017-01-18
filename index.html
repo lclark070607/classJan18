@@ -1,0 +1,36 @@
+<!doctype html> 
+<!--Dont forget to run gulp after you set up basic html structure, this
+saves it to the public directory.  Actually you can run gulp watch to keep
+gulp files updated-->
+
+<html>
+    <head>
+        <title>Starter pack</title>
+    <!--Add css file-->
+    <!--<link rel="stylesheet" href="style.css">-->
+    <!--add js file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <script src="newapp.js"></script>
+    <script type="x-mustache-template" id="peep-template">
+        <img src="{{ image }}">
+        <h2>{{ name }}</h2>
+        <p>Hails from {{ location }}</p>
+        <button>Yep</button>
+        <button>Nope</button>
+        </script>
+
+    </head>
+
+    <body>
+        <header>
+        <h1>Busy Bee Dating SErvice</h1>
+        <input type="text id="country>
+        <button id="submit">Filter</button>
+        </header>
+
+        <main>
+            <!--where the list of people goes-->
+            <ul id="peeps"></ul>
+        </main>
+    </body>
+</html>
